@@ -11,6 +11,8 @@ class ItemsController < ApplicationController
     render component: 'item', props:{department: @department, item:@item}
   end
 
+  
+
   private
   
   def set_department
@@ -20,5 +22,5 @@ class ItemsController < ApplicationController
   def set_item
     @item = Item.find(params[:id])
   end
-  
+
 end
