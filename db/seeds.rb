@@ -9,17 +9,4 @@
 
 
 
-require "faker"
-Department.destroy_all
-Item.destroy_all
-
-10.times do
-  x = Faker::Verb.simple_present
-  y = Faker::Verb.ing_form
-  z = Faker::Verb.base
-  s = Department.create(name: "#{x} #{y} #{z}")
-  4.times do
-    s.items.create(name: Faker::Verb.simple_present, discription: Faker::Quote.famous_last_words)
-  end
-end
 

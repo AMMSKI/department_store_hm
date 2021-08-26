@@ -3,21 +3,23 @@ Rails.application.routes.draw do
 
   root "departments#index"
   
-  # resources :departments do
-  #   resources :items
-  # end
+  resources :departments do
+    resources :items
+  end
 
-  get '/departments', to: 'departments#index'
-  get '/departments/new', to: 'departments#new'
-  get '/departments/:id', to: 'departments#show'
-  get '/departments/:id/edit', to: 'departments#edit'
+  # get '/departments', to: 'departments#index'
+  # get '/departments/new', to: 'departments#new'
+  # get '/departments/:id', to: 'departments#show'
+  # get '/departments/:id/edit', to: 'departments#edit'
 
 
-  get '/departments/:department_id/items', to: 'items#index'
-  get '/departments/:department_id/items/:id', to: 'items#show'
+  # get '/departments/:department_id/items', to: 'items#index'
+  # get '/departments/:department_id/items/new', to: 'items#new'
+  # get '/departments/:department_id/items/:id', to: 'items#show'
+  # post '/departments/:department_id/items/', to: 'items#create'
 
-  post '/departments', to: 'departments#create'
-  patch '/departments/:id', to: 'departments#update'
-  delete '/departments/:id', to: 'departments#destroy'
+  # post '/departments', to: 'departments#create'
+  # patch '/departments/:id', to: 'departments#update'
+  # delete '/departments/:id', to: 'departments#destroy'
 
 end
