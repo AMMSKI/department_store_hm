@@ -7,6 +7,10 @@ Rails.application.routes.draw do
     resources :items
   end
 
+  resources :items do 
+    resources :reviews
+  end
+  
   # get '/departments', to: 'departments#index'
   # get '/departments/new', to: 'departments#new'
   # get '/departments/:id', to: 'departments#show'

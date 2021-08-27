@@ -9,6 +9,7 @@ const Item = (props) => {
     <h3>{props.item.discription}</h3>
     <a href={`/departments/${props.department.id}/items`}>Back</a>
     <a href={`/departments/${props.department.id}/items/${props.item.id}/edit`}>Edit Item</a>
+    <a href={`/items/${props.item.id}/reviews`}>View Reviews</a>
     </div>
     )
   }

@@ -3,7 +3,9 @@
 one:
   stars: 1
   body: MyText
+  item: one
 
 two:
   stars: 1
   body: MyText
+  item: two
