@@ -14,8 +14,47 @@
  *= require_self
  */
 a {
-  color: green;
+  color: grey;
   margin-right: 10px;
   text-decoration: none;
+  border: 1px solid;
+  padding-bottom: 3px;
 }
 
+button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+div {
+  background-color: lightgreen;
+  text-align: center;
+  border: 1px solid;
+  padding: 40px;
+  margin: 40px;
+}
+
+.header {
+  background-color: lightblue;
+  padding-bottom: 50px;
+}
+
+.departmentinput {
+  margin-bottom: 10px;
+}
+
+.descriptioninput {
+  height: 50px;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin-bottom: 10px;
+}

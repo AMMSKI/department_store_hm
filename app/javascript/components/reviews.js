@@ -15,7 +15,7 @@ const Reviews = (props) => {
   })
 }
 return (
-  <div>
+  <div className="header">
     <h1>{`${props.item.name} reviews:`}</h1>
     <a href={`/items/${props.item.id}/reviews/new`}>Add New Review</a>
     <a href={`/departments/${props.item.department_id}/items/${props.item.id}`}>Back</a> 

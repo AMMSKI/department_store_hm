@@ -15,7 +15,7 @@ const Items = (props) => {
   })
 }
 return (
-  <div>
+  <div className="header">
     <h1>{`${props.department.name} items:`}</h1>
     <a href="/departments">Home</a>
     <a href= {`/departments/${props.department.id}/items/new`}>Create New Item</a>

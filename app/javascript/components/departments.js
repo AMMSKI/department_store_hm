@@ -16,7 +16,7 @@ const Departments = (props) => {
 }
 
 return (
-  <div>
+  <div className="header">
     <h1>Departments:</h1>
     <a href="/departments/new">Add New Department</a>
     {renderDepartments()}
